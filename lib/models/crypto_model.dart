@@ -17,3 +17,19 @@ class CryptoModel {
     );
   }
 }
+
+/*{
+  "bitcoin": {
+    "usd": 76116,
+    "inr": 7048563
+  },
+  "ethereum": {
+    "usd": 2359,
+    "inr": 218502
+  },
+  "cardano": {
+    "usd": 0.9,
+    "inr": 74
+  }
+}
+*/

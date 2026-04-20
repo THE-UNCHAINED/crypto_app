@@ -24,6 +24,11 @@ class CoingeckoService {
         });
 
         return cryptos;
+        /*Here cyrptos is list contain the modal data of all List<CryptoModel> cryptoList = [
+  CryptoModel(id: 'bitcoin', priceUsd: 76116, priceInr: 7048563),
+  CryptoModel(id: 'ethereum', priceUsd: 2359, priceInr: 218502),
+  CryptoModel(id: 'cardano', priceUsd: 0.9, priceInr: 74),
+]*/
       } else {
         throw Exception('Failed to load cryptos: ${response.statusCode}');
       }
