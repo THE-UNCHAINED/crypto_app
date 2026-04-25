@@ -3,6 +3,7 @@ import 'package:crypto_app/services/news_service.dart';
 import 'package:crypto_app/services/trending_service.dart';
 import 'package:crypto_app/utils/app_colors.dart';
 import 'package:crypto_app/views/search_results_screen.dart';
+import 'package:crypto_app/views/watch_list_screen.dart';
 import 'package:crypto_app/widgets/news_section.dart';
 import 'package:crypto_app/widgets/popular_cryptos_section.dart';
 import 'package:crypto_app/widgets/custom_search_bar.dart';
@@ -109,6 +110,16 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ),
         ],
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => WatchListScreen()),
+          );
+        },
+        backgroundColor: AppColors.cardBg,
+        child: Icon(Icons.favorite, color: AppColors.downColor),
       ),
     );
   }
